@@ -99,10 +99,12 @@ h5 {
 
     &::before {
       content: '';
-      background-image: url('../img/Apricot.png');
+      background-image: url('../img/apricotlogo.png');
       background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
       height: 100px;
-      width: 100px;
+      width: 160px;
       position: absolute;
       right: 21px;
       top: 15px;
