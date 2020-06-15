@@ -1,0 +1,15 @@
+{
+  "name": "mdbootstrap",
+  "version": "4.14.1",
+  "main": "js/mdb.min.js",
+  "repository": "https://github.com/mdbootstrap/bootstrap-material-design.git",
+  "author": "MDBootstrap",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "compilestyle:sass": "node-sass scss/custom-styles.scss css/style.css -w",
+    "compilecolor:sass": "node-sass scss/color.scss css/color.css -w"
+  }
+}
