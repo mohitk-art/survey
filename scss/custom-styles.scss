@@ -44,6 +44,21 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  .progress {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff5ef;
+    border-radius: 0;
+    z-index: 9999;
+
+    .progress-bar {
+      background-color: #c39577;
+    }
+  }
 
   .wrapper {
     background-color: #fff5ef;
@@ -56,6 +71,7 @@ h5 {
 
     .btn1 {
       display: inline-block;
+      outline: 0;
       padding: 14px 40px;
       font-family: $themefont;
       font-style: normal;
@@ -69,6 +85,7 @@ h5 {
     }
 
     .btn2 {
+      display: inline-block;
       font-family: $themefont;
       font-style: normal;
       font-weight: bold;
@@ -117,13 +134,16 @@ h5 {
           height: auto;
           margin-bottom: 30px;
 
-          &.mb-0 {
-            padding: 10px 20px !important;
+          &.form-control1 {
+            padding: 10px 25px !important;
+            margin-bottom: 15px;
           }
         }
 
         .submit-btn {
+          display: inline-block;
           font-family: $themefont;
+          outline: 0;
           font-style: normal;
           font-weight: bold;
           font-size: 24px;

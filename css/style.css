@@ -49,7 +49,18 @@ h5 {
   padding: 30px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+  .main-wrapper .progress {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff5ef;
+    border-radius: 0;
+    z-index: 9999; }
+    .main-wrapper .progress .progress-bar {
+      background-color: #c39577; }
   .main-wrapper .wrapper {
     background-color: #fff5ef;
     position: relative;
@@ -60,6 +71,7 @@ h5 {
     border-radius: 52px; }
     .main-wrapper .wrapper .btn1 {
       display: inline-block;
+      outline: 0;
       padding: 14px 40px;
       font-family: "Roboto", sans-serif;
       font-style: normal;
@@ -71,6 +83,7 @@ h5 {
       left: 20px;
       border-radius: 52px; }
     .main-wrapper .wrapper .btn2 {
+      display: inline-block;
       font-family: "Roboto", sans-serif;
       font-style: normal;
       font-weight: bold;
@@ -110,10 +123,13 @@ h5 {
           line-height: 28px;
           height: auto;
           margin-bottom: 30px; }
-          .main-wrapper .wrapper .box .form-wrapper .form-control.mb-0 {
-            padding: 10px 20px !important; }
+          .main-wrapper .wrapper .box .form-wrapper .form-control.form-control1 {
+            padding: 10px 25px !important;
+            margin-bottom: 15px; }
         .main-wrapper .wrapper .box .form-wrapper .submit-btn {
+          display: inline-block;
           font-family: "Roboto", sans-serif;
+          outline: 0;
           font-style: normal;
           font-weight: bold;
           font-size: 24px;
